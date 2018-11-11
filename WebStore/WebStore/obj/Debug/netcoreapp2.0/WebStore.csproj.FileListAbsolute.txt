@@ -1,0 +1,10 @@
+C:\Users\moroz\source\repos\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.deps.json
+C:\Users\moroz\source\repos\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.runtimeconfig.json
+C:\Users\moroz\source\repos\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.runtimeconfig.dev.json
+C:\Users\moroz\source\repos\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.dll
+C:\Users\moroz\source\repos\WebStore\WebStore\bin\Debug\netcoreapp2.0\WebStore.pdb
+C:\Users\moroz\source\repos\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.csproj.CoreCompileInputs.cache
+C:\Users\moroz\source\repos\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.AssemblyInfoInputs.cache
+C:\Users\moroz\source\repos\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.AssemblyInfo.cs
+C:\Users\moroz\source\repos\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.dll
+C:\Users\moroz\source\repos\WebStore\WebStore\obj\Debug\netcoreapp2.0\WebStore.pdb
