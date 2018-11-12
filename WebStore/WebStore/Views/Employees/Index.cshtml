@@ -1,0 +1,18 @@
+﻿
+@model IEnumerable<EmployeeView>
+@{
+    ViewBag.Title = "Index";
+    Layout = "_LayoutSideBar";
+}
+
+    <table class="table table-condensed">
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.SurName</td>
+            <td>@Html.ActionLink("Детали","Details",new { s_id = item.id})</td>
+        </tr>
+        }
+        </table>
+
+
