@@ -13265,11 +13265,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\moroz\\source\\repos\\WebStore\\WebStore\\WebStore.csproj",
+      "projectUniqueName": "C:\\Users\\moroz\\ASP.Net1\\WebStore\\WebStore\\WebStore.csproj",
       "projectName": "WebStore",
-      "projectPath": "C:\\Users\\moroz\\source\\repos\\WebStore\\WebStore\\WebStore.csproj",
+      "projectPath": "C:\\Users\\moroz\\ASP.Net1\\WebStore\\WebStore\\WebStore.csproj",
       "packagesPath": "C:\\Users\\moroz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\moroz\\source\\repos\\WebStore\\WebStore\\obj\\",
+      "outputPath": "C:\\Users\\moroz\\ASP.Net1\\WebStore\\WebStore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
