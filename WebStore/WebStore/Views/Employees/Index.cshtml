@@ -4,13 +4,16 @@
     ViewBag.Title = "Index";
     Layout = "_LayoutSideBar";
 }
-
+<a asp-action="Edit" class="btn btn-success">Добавить</a>
     <table class="table table-condensed">
         @foreach (var item in Model)
         {
         <tr>
+            <td><a asp-action="Edit" asp-route-id = "@item.id"><i class="fa fa-edit"></i></a></td>
+            <td>@item.id</td>
             <td>@item.SurName</td>
-            <td>@Html.ActionLink("Детали","Details",new { s_id = item.id})</td>
+            <td>@Html.ActionLink("Детали","Details",new { id = item.id})</td>
+            <td><a asp-action="Delete" asp-route-id="@item.id"><i class="fa fa-cut"></i></a></td>
         </tr>
         }
         </table>
