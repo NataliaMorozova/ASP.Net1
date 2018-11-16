@@ -1,15 +1,15 @@
-﻿@{
-Layout = "_LayoutSideBar";
-ViewBag.Title = "Index";
+﻿
+@{
+    Layout = "_LayoutSideBar";
+    ViewBag.Title = "Index";
 }
 
 @section top{
     @await Html.PartialAsync("Partial/_Slider")
 }
 
-
-
-
 @await Html.PartialAsync("Partial/_Features")
+@*@model CatalogViewModel*@
+@*@await Html.PartialAsync("Partial/_ProductItems", Model.Products)*@
 @await Html.PartialAsync("Partial/_Category")
 @await Html.PartialAsync("Partial/_Recommended")
