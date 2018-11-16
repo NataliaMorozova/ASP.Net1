@@ -5028,6 +5028,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "WebStoreDomain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/WebStoreDomain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebStoreDomain.dll": {}
+        }
       }
     }
   },
@@ -13249,13 +13259,19 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "WebStoreDomain/1.0.0": {
+      "type": "project",
+      "path": "../WebStoreDomain/WebStoreDomain.csproj",
+      "msbuildProject": "../WebStoreDomain/WebStoreDomain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.9",
       "Microsoft.NETCore.App >= 2.0.0",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.4",
+      "WebStoreDomain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -13287,7 +13303,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\moroz\\source\\repos\\WebStore\\WebStoreDomain\\WebStoreDomain.csproj": {
+              "projectPath": "C:\\Users\\moroz\\source\\repos\\WebStore\\WebStoreDomain\\WebStoreDomain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
