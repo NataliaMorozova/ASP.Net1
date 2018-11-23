@@ -9,6 +9,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebStore.Infrastructure.Interfaces;
 using WebStore.Infrastructure.Implementations;
+using WebStore.DAL.Context;
+using Microsoft.EntityFrameworkCore;
+using WebStore.Infrastructure.Sql;
 
 namespace WebStore
 {
@@ -26,7 +29,10 @@ namespace WebStore
             services.AddMvc();
 
             services.AddSingleton<IEmployeesData, InMemoryEmployeesData>();
-            services.AddSingleton<IProductData, InMemoryProductData>();
+            services.AddTransient<IProductData, SqlProductData>();
+
+            services.AddDbContext<WebStoreContext>(options => options.UseSqlServer(
+                Configuration.GetConnectionString("DefaultConnection")));
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)

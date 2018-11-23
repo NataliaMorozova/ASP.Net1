@@ -6,5 +6,6 @@ namespace WebStoreDomain.Entites.Base
 {
     public class Brand : OrderedEntity
     {
+        public virtual ICollection<Product> Products { get; set; }
     }
 }

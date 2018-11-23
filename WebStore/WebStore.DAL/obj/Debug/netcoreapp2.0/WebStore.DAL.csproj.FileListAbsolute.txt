@@ -1,0 +1,12 @@
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.0\WebStore.DAL.deps.json
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.0\WebStore.DAL.dll
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.0\WebStore.DAL.pdb
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.0\WebStoreDomain.dll
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.0\WebStoreDomain.pdb
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.csprojAssemblyReference.cache
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.AssemblyInfoInputs.cache
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.AssemblyInfo.cs
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.csproj.CopyComplete
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.dll
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.0\WebStore.DAL.pdb

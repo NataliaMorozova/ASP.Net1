@@ -427,5 +427,9 @@ namespace WebStore.Infrastructure.Implementations
             return products;
         }
 
+        public int GetBrandProductCount(int brandid)
+        {
+            return _products.Count(c => c.BrandId == brandid);
+        }
     }
 }
