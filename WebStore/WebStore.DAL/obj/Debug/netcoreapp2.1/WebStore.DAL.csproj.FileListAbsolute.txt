@@ -1,0 +1,6 @@
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.1\WebStore.DAL.deps.json
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\bin\Debug\netcoreapp2.1\WebStore.DAL.dll
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.1\WebStore.DAL.csprojAssemblyReference.cache
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.1\WebStore.DAL.csproj.CoreCompileInputs.cache
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.1\WebStore.DAL.AssemblyInfoInputs.cache
+C:\Users\moroz\source\repos\WebStore\WebStore.DAL\obj\Debug\netcoreapp2.1\WebStore.DAL.AssemblyInfo.cs

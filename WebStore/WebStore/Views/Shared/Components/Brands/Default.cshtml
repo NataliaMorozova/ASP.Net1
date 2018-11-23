@@ -7,7 +7,7 @@
             @foreach (var brand in Model)
             {
             <li><a asp-action="Shop" asp-controller="Catalog" asp-route-brandId="@brand.id"> 
-    @*<span class="pull-right">(@brand.ProductsCount)</span>*@@brand.Name</a></li>
+    <span class="pull-right">(@brand.ProductsCount)</span>@brand.Name</a></li>
             }
         </ul>
     </div>
