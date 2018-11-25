@@ -12,6 +12,8 @@ using WebStore.Infrastructure.Implementations;
 using WebStore.DAL.Context;
 using Microsoft.EntityFrameworkCore;
 using WebStore.Infrastructure.Sql;
+using WebStoreDomain.Entites;
+using Microsoft.AspNetCore.Identity;
 
 namespace WebStore
 {
@@ -33,9 +35,38 @@ namespace WebStore
 
             services.AddDbContext<WebStoreContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<WebStoreContext>()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequiredLength = 6;
+
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+                options.Lockout.AllowedForNewUsers = true;
+
+                // User settings
+                //options.User.RequireUniqueEmail = true;
+            });
+            services.ConfigureApplicationCookie(options =>
+            {
+                // Cookie settings
+                options.Cookie.HttpOnly = true;
+                options.Cookie.Expiration = TimeSpan.FromDays(150);
+                options.LoginPath = "/Account/Login"; // If the LoginPath is not set here, ASP.NET Core will default to /Account/Login
+                options.LogoutPath = "/Account/Logout"; // If the LogoutPath is not set here, ASP.NET Core will default to /Account/Logout
+                options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
+                options.SlidingExpiration = true;
+            });
         }
 
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -45,6 +76,8 @@ namespace WebStore
             app.UseStaticFiles();
 
             app.UseWelcomePage("/welcome");
+
+            app.UseAuthentication();
 
             /* var hello = Configuration["CustomHelloWorld!"];
 
