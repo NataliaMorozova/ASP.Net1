@@ -9,6 +9,7 @@ using WebStore.Models;
 using WebStoreDomain.Entites.Base;
 using Microsoft.AspNetCore.Identity;
 using WebStoreDomain.Entites;
+using WebStoreDomain;
 
 namespace WebStore.Controllers
 {
@@ -41,6 +42,8 @@ namespace WebStore.Controllers
                 if (createResult.Succeeded)
                 {
                     await _signInManager.SignInAsync(user, false);//если успешно - производим логин
+                    await _userManager.AddToRoleAsync(user, WebStoreConstants.Roles.User);// добавляем роль пользователю
+
                     return RedirectToAction("Index", "Home");
                 }
                
