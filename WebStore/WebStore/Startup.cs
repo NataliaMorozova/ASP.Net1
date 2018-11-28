@@ -63,6 +63,9 @@ namespace WebStore
                 options.AccessDeniedPath = "/Account/AccessDenied"; // If the AccessDeniedPath is not set here, ASP.NET Core will default to /Account/AccessDenied
                 options.SlidingExpiration = true;
             });
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddTransient<ICartService, CookieCartService>();
         }
 
 
@@ -87,9 +90,17 @@ namespace WebStore
             });*/
             app.UseMvc(routes =>
             {
+              
+                routes.MapRoute(
+                    name: "areas",
+                    template: "{area:exists}/{controller=Default}/{action=Index}/{id?}"
+                    
+                    );
+
                 routes.MapRoute(    
                     name: "default", 
                     template: "{controller=Home}/{Action=Index}/{id?}");
+                
             });
         }
     }
